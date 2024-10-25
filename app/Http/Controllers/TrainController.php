@@ -8,8 +8,8 @@ use App\Models\Train;
 class TrainController extends Controller
 {
     public function index(){
-        //$trains= Train::all();
+        $trains= Train::all();
      
-        return view("trains");
+        return view("trains", compact("trains"));
     }
 }

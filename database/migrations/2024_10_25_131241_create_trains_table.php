@@ -34,7 +34,7 @@ Cancellato
             $table->integer("numero_carrozze")->nullable();
             $table->boolean("in_orario")->default(true);
             $table->boolean("cancellato")->default(false);
-            $table->date("data_odierna")->default(now());
+            $table->date("data_odierna");
             
             
             $table->timestamps();
